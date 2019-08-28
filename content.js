@@ -3,14 +3,12 @@ console.log('Chrome Extension go!');
 chrome.runtime.onMessage.addListener(gotMessage);
 
 function gotMessage(message, sender, sendResponse) {
-  console.log(message.txt);
-
-  if (message.txt === "hello") {
+  console.log(message);
     let paragrahps = document.getElementsByTagName('p');
     for (el of paragrahps) {
       el.style['background-color'] = getRandomColor();
+      el.style.innerHTML = message.txt;
     }
-  }
 }
 
 function getRandomColor() {
