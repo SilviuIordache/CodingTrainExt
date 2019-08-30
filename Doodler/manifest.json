@@ -8,7 +8,7 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["p5.dom.js", "p5.js", "sketch.js"]
+      "js": ["p5.js", "p5.dom.js", "sketch.js"]
     }
   ],
   "browser_action": {

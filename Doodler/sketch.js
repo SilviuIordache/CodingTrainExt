@@ -1,12 +1,18 @@
 console.log('sketch');
 
 function setup() {
-  console.log('sketch started!');
-  createCanvas(400, 400);
-  // c.position(0, 0);
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+  clear();
 }
 
 function draw() {
-  background(0);
-  console.log('sketch looping!');
+  
+  stroke(0);
+  strokeWeight(4);
+
+  if (mouseIsPressed) {
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
+  
 }
